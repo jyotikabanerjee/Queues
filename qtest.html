@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Queues</title>
+    <script src="queue.js"></script>
+    <script>
+
+            //console.log("Hello world...");
+            var q1 = new Queue();
+
+            q1.enqueue(1);
+            q1.enqueue(2);
+            q1.enqueue(3);
+
+            q1.print();
+
+            console.log("Peek: "+q1.peek());
+
+            q1.dequeue();
+            q1.dequeue();
+
+            q1.print();
+            console.log(q1.isEmpty());
+
+            q1.dequeue();
+            q1.dequeue();
+
+            console.log(q1.isEmpty());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
